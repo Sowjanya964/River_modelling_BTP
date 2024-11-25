@@ -1,0 +1,96 @@
+<RASMapper>
+  <Version>2.0.15614</Version>
+  <RASProjectionFilename Filename="C:\Users\user\Downloads\7756 (1).prj" />
+  <Geometries Checked="True" Expanded="True" TopNode="True">
+    <Layer Name="attempt3geometry" Type="RASGeometry" Checked="True" Expanded="True" Filename=".\attempt3.g01.hdf">
+      <Layer Name="Rivers" Type="RASRiver" />
+      <Layer Name="XS" Type="RASXS" />
+      <Layer Name="Storage Areas" Type="RASStorageArea" />
+      <Layer Name="2D Flow Areas" Type="RASD2FlowArea">
+        <PlotOption Name="Mesh Edges" Value="True" />
+        <PointSymbol Type="1" Size="4" pA="255" pR="0" pG="0" pB="255" bA="255" bR="255" bG="255" bB="255" />
+        <Pen A="255" R="0" G="0" B="0" Width="1" />
+        <Brush A="64" R="173" G="216" B="230" />
+      </Layer>
+      <Layer Name="..." Type="RASMoreLayers" />
+    </Layer>
+  </Geometries>
+  <Results Checked="True" Expanded="True">
+    <Layer Name="basescenario" Type="RASResults" Checked="True" Expanded="True" Filename=".\attempt3.p01.hdf">
+      <Layer Name="Geometry" Type="RASGeometry" Filename=".\attempt3.p01.hdf">
+        <Layer Name="Rivers" Type="RASRiver" />
+        <Layer Name="XS" Type="RASXS" />
+        <Layer Name="Storage Areas" Type="RASStorageArea" />
+        <Layer Name="2D Flow Areas" Type="RASD2FlowArea">
+          <PlotOption Name="Mesh Edges" Value="True" />
+        </Layer>
+        <Layer Name="..." Type="RASMoreLayers" />
+      </Layer>
+      <Layer Name="depth" Type="RASResultsMap" Checked="True" Selected="True">
+        <SurfaceFill Alpha="255" Colors="-16711681,-16777077" Values="0,15" Stretched="True" />
+        <Contour On="False" Interval="5" Color="-16777216" />
+        <LabelFeatures Checked="True" rows="1" cols="1" r0c0="Map Value" Position="5" Color="-16777216" />
+        <MapParameters MapType="depth" LayerName="Depth" OutputMode="Dynamic Surface" Terrain="Terrain" ContourPolygonValue="0" ProfileIndex="715" ProfileName="16DEC2017 00:00:00" ArrivalDepth="0" ArrivalStartMode="0" Hours="True" />
+      </Layer>
+      <Layer Name="velocity" Type="RASResultsMap" Checked="True">
+        <SurfaceFill Alpha="255" Colors="-12490271,-10855485,-9155163,-16760704,-16744320,-16711872,-256" Values="0,2,4,6,8,10,15" Stretched="True" />
+        <Contour On="False" Interval="5" Color="-16777216" />
+        <MapParameters MapType="velocity" OutputMode="Dynamic Surface" ContourPolygonValue="0" ProfileIndex="0" ProfileName="01JAN2016 00:00:00" ArrivalStartMode="0" Hours="True" />
+      </Layer>
+      <Layer Name="elevation" Type="RASResultsMap" Checked="True">
+        <Pen A="255" R="255" G="0" B="255" Width="2" />
+        <Brush A="42" R="255" G="245" B="238" />
+        <SurfaceFill Alpha="255" Colors="-8388864,-16744448,-256,-23296,-65536,-16181,-65281" Values="0,16.6666666666667,33.3333333333333,50,66.6666666666667,83.3333333333333,100" Stretched="True" />
+        <Contour On="False" Interval="5" Color="-16777216" />
+        <LabelFeatures Checked="True" rows="1" cols="1" r0c0="Map Value" Position="5" Color="-16777216" />
+        <MapParameters MapType="elevation" LayerName="WSE" OutputMode="Dynamic Surface" Terrain="Terrain" ContourPolygonValue="0" ProfileIndex="48" ProfileName="18FEB2016 00:00:00" ArrivalDepth="0" ArrivalStartMode="0" Hours="True" />
+      </Layer>
+    </Layer>
+  </Results>
+  <MapLayers Expanded="True">
+    <Layer Name="Google Satellite" Type="WMSLayer" Filename="..\..\..\..\Users\user\AppData\Local\HEC\Mapping\XML\Google Satellite.xml">
+      <Alpha>255</Alpha>
+      <ResampleMethod>near</ResampleMethod>
+    </Layer>
+  </MapLayers>
+  <Terrains Checked="True" Expanded="True">
+    <Layer Name="Terrain" Type="TerrainLayer" Checked="True" Filename=".\Terrain\Terrain.hdf">
+      <SurfaceFill Alpha="255" Colors="-10039894,-256,-16744448,-23296,-7667712,-5952982,-8355712,-1286" Values="-9.796875,5.59114918449,7.32885426660619,9.38243069610254,12.8061394792911,18.3175831986306,28.4104523638492,453.78125" Stretched="True" />
+      <Contour On="False" Interval="5" Color="-16777216" />
+      <HillShade On="True" Azimuth="315" Zenith="45" ZFactor="3" />
+      <SurfaceFill Alpha="255" Colors="-10039894,-256,-16744448,-23296,-7667712,-5952982,-8355712,-1286" Values="-9.796875,5.59114918449,7.32885426660619,9.38243069610254,12.8061394792911,18.3175831986306,28.4104523638492,453.78125" Stretched="True" />
+      <Surface On="True" />
+    </Layer>
+  </Terrains>
+  <CurrentView>
+    <MaxX>991875.209891554</MaxX>
+    <MinX>947019.887644291</MinX>
+    <MaxY>1039509.58911048</MaxY>
+    <MinY>1008351.83934966</MinY>
+  </CurrentView>
+  <ProfileLines>
+    <ProfileLine Name="profile line 1">
+      <posList>973596.455193424,1030357.03676726,0,0 969716.528849428,1025385.88113902,0,0 969716.528849428,1025385.88113902,0,0</posList>
+    </ProfileLine>
+  </ProfileLines>
+  <VelocitySettings>
+    <Density>1.5</Density>
+    <Lifetime>100</Lifetime>
+    <Radius>0.75</Radius>
+    <Method>2</Method>
+    <Timestep>1</Timestep>
+    <StaticColor>Black</StaticColor>
+  </VelocitySettings>
+  <AnimationSettings>
+    <DelayTimer>0</DelayTimer>
+  </AnimationSettings>
+  <ProjectSettings>
+    <Units>SI Units</Units>
+  </ProjectSettings>
+  <CurrentSettings>
+    <Folders>
+      <TerrainDestinationFolder>.\Terrain</TerrainDestinationFolder>
+      <TerrainSourceFolder>..\dems</TerrainSourceFolder>
+    </Folders>
+  </CurrentSettings>
+</RASMapper>
